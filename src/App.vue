@@ -1,12 +1,36 @@
 <template>
   <div id="app">
     <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
+      <div class="row">
+        <div class="col ">
+          <NavSearchBar />
+        </div>
+      </div>
+      <div class="row mt-4">
+        <div class="col-6">
+          <ShowResult />
+        </div>
+        <div class="col-6">
+          <ShowMenu />
+        </div>
+      </div>
     </div>
-    <router-view/>
   </div>
 </template>
+
+<script>
+import ShowMenu from "./components/ShowMenu";
+import ShowResult from "./components/ShowResult";
+import NavSearchBar from "./components/NavSearchBar";
+
+export default {
+  components: {
+    ShowMenu,
+    ShowResult,
+    NavSearchBar,
+  },
+};
+</script>
 
 <style>
 #app {
@@ -18,7 +42,7 @@
 }
 
 #nav {
-  padding: 30px;
+  padding: 10px;
 }
 
 #nav a {
