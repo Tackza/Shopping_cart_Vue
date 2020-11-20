@@ -1,11 +1,25 @@
 <template>
   <div>
-    <div cclass="btn-group" role="group"  >
-      <button type="button" class="btn btn-info" @click="showList(0)">ทั้งหมด</button>
-      <button type="button" class="btn btn-info" @click="showList('Food')">อาหาร</button>
-      <button type="button" class="btn btn-info" @click="showList('Drink')">เครื่องดื่ม</button>
-      <button type="button" class="btn btn-info" @click="showList('Dessert')">ทานเล่น</button>
-      <button type="button" class="btn btn-info" @click="showList('Other')">อื่นๆ</button>
+    <div cclass="btn-group" role="group">
+      <button type="button" class="btn btn-info" @click="showList(0)">
+        ทั้งหมด
+      </button>
+      |
+      <button type="button" class="btn btn-info" @click="showList('Food')">
+        อาหาร
+      </button>
+      |
+      <button type="button" class="btn btn-info" @click="showList('Drink')">
+        เครื่องดื่ม
+      </button>
+      |
+      <button type="button" class="btn btn-info" @click="showList('Dessert')">
+        ทานเล่น
+      </button>
+      |
+      <button type="button" class="btn btn-info" @click="showList('Other')">
+        อื่นๆ
+      </button>
     </div>
     <div class="row mt-2">
       <div class="col-6">
@@ -83,5 +97,11 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.btn-info {
+  margin-right: 1%;
+  color: #fff;
+  background-color: #17a2b8;
+  border-color: #17a2b8;
+}
 </style>

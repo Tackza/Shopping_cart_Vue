@@ -1,6 +1,10 @@
 <template>
   <div>
-    <button type="button" class="btn btn-warning" @click="clearItems">Clear</button>
+    <div class="btn-clear">
+      <button type="button" class="btn btn-warning" @click="clearItems">
+        Clear
+      </button>
+    </div>
     <div>
       <table id="productSizes" class="table">
         <thead>
@@ -132,5 +136,8 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
+.btn-clear {
+  margin-left: auto;
+}
 </style>

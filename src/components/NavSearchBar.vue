@@ -1,9 +1,9 @@
 <template>
-  <div>
+  <div id="app">
     <nav class="navbar navbar-light bg-light">
-      <a class="navbar-brand">Navbar</a>
+      <a class="navbar-brand">Tackza Restaurant</a>
 
-      <div id="app">
+      <div>
         <autocomplete
           ref="autocomplete"
           :search="search"
@@ -54,7 +54,14 @@ export default {
 
 <style scoped>
 #app {
-  max-width: 700px;
+  max-width: auto;
   margin: 0 auto;
+}
+.bg-light {
+  background-color: rgb(158, 106, 211) !important;
+}
+#nav a {
+  font-weight: bold;
+  color: #fafafa;
 }
 </style>
